@@ -34,9 +34,9 @@ def test_calculate_angle():
     r2 = np.array([0,1,0])
     r3 = np.array([0,0,1])
 
-    expected_angle = +45.0
+    expected_angle = 45.0
     calculate_angle = geometry_analysis.calculate_angle(r1, r2, r3, degrees = True)
 
-    assert expected_angle == calculate_angle
+    np.testing.assert_almost_equal(expected_angle, calculate_angle,decimal=7)
 
 
