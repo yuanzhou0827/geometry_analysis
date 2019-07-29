@@ -20,9 +20,9 @@
 # -- Project information -----------------------------------------------------
 
 project = 'geometry_analysis'
-copyright = ("2019, yuanzhou. Project structure based on the "
+copyright = ("2019, Yuan Zhou. Project structure based on the "
              "Computational Molecular Science Python Cookiecutter version 1.0")
-author = 'yuanzhou'
+author = 'Yuan Zhou'
 
 # The short X.Y version
 version = ''
@@ -41,8 +41,11 @@ release = ''
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'sphinx.ext.autosummary',
     'sphinx.ext.mathjax',
+    'sphinx.ext.napoleon',
 ]
+autosummary_generate = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
